@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Aluguel de carro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Dados para Cadastro de Veiculos</h1>
+            </header>
+        </div>
+        
+        <div class="tab">
+            <button class="tab-button" onclick="abrirTab(event, 'dados-pessoais')">Dados pessoais</button>
+            <button class="tab-button" onclick="abrirTab(event, 'consulta-cliente')">Consulta de Clientes</button> <p>
+                
+        </div>
+        <form name="frmCliCad" method="post" action="cad_cli.jsp">
+            <!--Identificação: <input type="text" name="ident"> <p>-->
+            Codigo <input type="text" name="ident"> <p>
+            Modelo <input type="text" name="modelo"> 
+            Placa <input type="text" name="placa"> <p>
+            Ano <input type="number" name="ano"> 
+            Cor <input type="text" name="cor"> <p>
+            Fabricante <input type="text" name="fabricante"> 
+            Diaria <input type="number" name="diaria"> <p>
+            <input type="reset" name="limpa" value="Limpar"> 
+            <input type="submit" name="envia" value="Salvar">
+            <input type="submit" name="envia" value="Novo"> 
+            <input type="submit" name="envia" value="Editar">
+            <input type="submit" name="envia" value="Excluir"> 
+        </form>
+        
+    </body>
+</html>
